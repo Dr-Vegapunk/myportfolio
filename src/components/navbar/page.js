@@ -18,7 +18,7 @@ export default function Navbars() {
         >
         <Image src="./logo1.png"  viewBox="0 0 36 36"   className="mr-4 h-[50px] w-[50px]"></Image>
         </div>
-        <p className="font-bold text-inherit">WebApp Developer</p>
+        <p className="font-bold text-inherit">Ishan Karki</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem isActive>
