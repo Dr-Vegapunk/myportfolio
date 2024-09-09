@@ -15,7 +15,7 @@ const MyPortfolio = () => {
           <div className="md:w-1/2 mt-8 ml-4 ">
             <Card className="shadow-2xl " >
               <CardBody className="p-10 bg-gradient-to-r from-indigo-500 to-blue-200">
-                <h1 className="text-2xl font-bold mb-4 animate-bounce">Ishan Karki</h1>
+                <h1 className="text-2xl sm:text-xl md:text-lgfont-bold mb-4 animate-bounce">Ishan Karki</h1>
                 <p className="text-lg">
                   Hello, I am an aspiring MERN stack developer from Kathmandu, Nepal. I'm eagerly seeking internship opportunities to apply and expand my skills.
                 </p>
@@ -30,7 +30,7 @@ const MyPortfolio = () => {
   <div className='bg-gradient-to-r from-indigo-500 to-blue-200 p-5 rounded-3xl shadow-2xl mt-8 flex flex-col items-center'>
     <Card className='w-[50%] p-6 bg-gradient-to-r from-blue-200 to bg-indigo-400'>
       <CardBody>
-      <div className='flex flex-col items-center mb-4'><h2 className='text-2xl font-bold mb-2 flex items-center'>About me <Icon icon="icon-park-solid:avatar" className='w-6 h-6 mx-2' /></h2></div>
+      <div className='flex flex-col items-center mb-4'><h2 className='text-2xl sm:text-xl md:text-lg font-bold mb-2 flex items-center'>About me <Icon icon="icon-park-solid:avatar" className='w-6 h-6 mx-2' /></h2></div>
     <div><p className='text-lg text-gray-900'>Hello everyone, I am an aspiring MERN stack developer with a passion for creating innovative solutions and continuously learning new technologies. I am eager to apply my skills and expand my knowledge in the field of web development.</p></div>
     <Button color="primary" className='mt-6 w-[30%] mx-auto '>View Portfolio</Button>
     
@@ -41,7 +41,7 @@ const MyPortfolio = () => {
     <div className='bg-gradient-to-r from-indigo-500 to-blue-200 p-5 rounded-3xl shadow-2xl mt-8 flex flex-col items-center'>
     <Card className='w-[50%] p-6 bg-gradient-to-r from-blue-200 to bg-indigo-400'>
       <CardBody>
-        <div className='flex flex-col items-center mb-4'><h2 className='text-2xl font-bold mb-2 flex items-center'>Education <Icon icon="zondicons:education" className='w-6 h-6 mx-2'/></h2></div>
+        <div className='flex flex-col items-center mb-4'><h2 className='text-2xl sm:text-xl md:text-lg font-bold mb-2 flex items-center'>Education <Icon icon="zondicons:education" className='w-6 h-6 mx-2'/></h2></div>
         <div><p className='text-lg text-gray-900'>Bachelor of technology in computing system engineering</p></div>
         <div><p className='text-lg text-gray-900'>University of Sunderland in ISMT, Nepal</p></div>
       </CardBody>
