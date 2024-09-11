@@ -1,9 +1,10 @@
 import { cn } from '@nextui-org/react';
 import React from 'react';
 
+
 const Images = () => {
   return (
-    <div className="w-[60%] md:w-[60%] sm:w-[70%] h-96 md:h-96 sm:h-40 relative rounded-lg overflow-hidden shadow-xl ml-20">
+    <div className="w-full h-full relative rounded-lg overflow-hidden shadow-xl">
       <div
         title="image1"
         className={cn(
@@ -14,13 +15,14 @@ const Images = () => {
           "hover:before:bg-opacity-0"
         )}
       >
-        <div className="absolute bottom-0 left-0 p-4 z-20 text-white">
-          <h2 className="text-2xl md:text-2xl sm:text-sm font-bold mb-2">Ishan's Portfolio</h2>
-          <p className="text-sm md:text-sm sm:text-xs">Aspiring MERN Stack Developer</p>
+        <div className="absolute bottom-0 left-0 p-2 sm:p-4 z-20 text-white">
+          <h2 className="text-sm sm:text-lg md:text-xl font-bold mb-1 sm:mb-2">Ishan's Portfolio</h2>
+          <p className="text-xs sm:text-sm md:text-base">Aspiring MERN Stack Developer</p>
         </div>
       </div>
     </div>
   );
 };
+
 
 export default Images;
