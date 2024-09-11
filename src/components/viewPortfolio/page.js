@@ -87,8 +87,8 @@ export default function ViewPortfolio() {
             </motion.div>
           ))}
         </div>
-        <div className="text-center mt-12">
-          <Button size="lg">
+        <div className="text-center mt-12 mb-4">
+          <Button size="lg" className='mb-8'>
             View All Projects <ChevronRight className="ml-2 h-5 w-5" />
           </Button>
         </div>

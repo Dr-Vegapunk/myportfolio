@@ -3,7 +3,7 @@ import React from 'react';
 
 const Images = () => {
   return (
-    <div className="w-[60%] h-96 relative rounded-lg overflow-hidden shadow-xl ml-20">
+    <div className="w-[60%] md:w-[60%] sm:w-[70%] h-96 md:h-96 sm:h-40 relative rounded-lg overflow-hidden shadow-xl ml-20">
       <div
         title="image1"
         className={cn(
@@ -15,8 +15,8 @@ const Images = () => {
         )}
       >
         <div className="absolute bottom-0 left-0 p-4 z-20 text-white">
-          <h2 className="text-2xl font-bold mb-2">Ishan's Portfolio</h2>
-          <p className="text-sm">Aspiring MERN Stack Developer</p>
+          <h2 className="text-2xl md:text-2xl sm:text-sm font-bold mb-2">Ishan's Portfolio</h2>
+          <p className="text-sm md:text-sm sm:text-xs">Aspiring MERN Stack Developer</p>
         </div>
       </div>
     </div>
