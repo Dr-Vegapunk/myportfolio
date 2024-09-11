@@ -97,7 +97,7 @@ const MyPortfolio = () => {
           <div className='bg-gradient-to-r from-indigo-500 to-blue-200 p-5 rounded-3xl shadow-2xl mt-8 flex flex-col items-center'>
     <Card className='w-[50%] p-8 bg-gradient-to-r from-blue-200 to bg-indigo-400'>
       <CardBody>
-        <div className='flex flex-col items-center mb-4'><h2 className='text-2xl font-bold mb-2 flex items-center'>Contact me <Icon icon="material-symbols-light:contact-mail-rounded"  className='w-6 h-6 mx-2'/></h2></div>
+        <div className='flex flex-col items-center mb-4'><h2 className='text-2xl md:text-2xl sm:text-xs font-bold mb-2 flex items-center'>Contact me <Icon icon="material-symbols-light:contact-mail-rounded"  className='w-6 md:w-6 sm:w-4 h-6 mx-2'/></h2></div>
            <div className=''>
            <ContactForm />
             </div> 

@@ -39,12 +39,12 @@ const ContactForm = () => {
   return (
     <form onSubmit={sendEmail} className='flex flex-col'>
   <label className='mb-4'>Name</label>
-  <Input type="text" name="user_name" className='w-full sm:w-3/4 md:w-1/2 text-lg mb-4' />
+  <Input type="text" name="user_name" className='w-full md:w-full sm:w-3/4   text-lg mb-4' />
   <label className='mb-4'>Email</label>
-  <Input type="email" name="user_email" className='w-full sm:w-3/4 md:w-1/2 text-lg mb-4' />
+  <Input type="email" name="user_email" className='w-full md:w-full sm:w-3/4   text-lg mb-4' />
   <label className='mb-4'>Message</label>
-  <Textarea name="message" className='w-full sm:w-3/4 md:w-1/2 text-lg mb-4' />
-  <Button type="submit" value="Send" disabled={isSubmitting} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-[40%] sm:w-3/4 md:w-1/2 mx-auto' >Submit</Button>
+  <Textarea name="message" className='w-full md:w-full sm:w-3/4  text-lg mb-4' />
+  <Button type="submit" value="Send" disabled={isSubmitting} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4  w-[40%]  rounded-lg mx-auto md:w-[40%] sm:w-[20%]' >Submit</Button>
   {stateMessage && <p className='text-lg text-red-600'>{stateMessage}</p>}
 </form>
   );
