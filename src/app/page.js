@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useRef } from 'react';
 import Images from '@/components/images/page';
 import Navbars from '@/components/navbar/page';
 import { Button, Card, CardBody, Progress } from '@nextui-org/react';
@@ -7,9 +8,14 @@ import ContactForm from '@/components/contactForm/page';
 import ViewPortfolio from '@/components/viewPortfolio/page';
 
 const MyPortfolio = () => {
+  const homeRef = useRef(null);
+  const aboutRef=useRef(null);
+  const contactRef = useRef(null);
+  const portfolioRef = useRef(null);
+
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-indigo-400">
-      <Navbars />
+    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-indigo-400" ref={homeRef}>
+      <Navbars aboutRef={aboutRef} homeRef={homeRef} contactRef={contactRef} portfolioRef={portfolioRef} />
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 shadow-2xl rounded-lg">
           <div className="w-full sm:w-1/2 mt-4 mb-4">
@@ -23,7 +29,7 @@ const MyPortfolio = () => {
             </Card>
           </div>
           <div className="w-full sm:w-1/5 md:ml-14 md:w-1/5 mb-4  lg:w-3/12 mt-4">
-            <div className="w-full h-64 sm:h-full">
+            <div className="w-full max-h-full sm:h-full">
               <Images />
             </div>
           </div>
@@ -34,7 +40,7 @@ const MyPortfolio = () => {
           <div className='bg-gradient-to-r from-indigo-500 to-blue-200 p-5 rounded-3xl shadow-2xl flex flex-col items-center'>
             <Card className='w-full md:w-3/4 p-6 bg-gradient-to-r from-blue-200 to-indigo-400'>
               <CardBody>
-                <div className='flex flex-col items-center mb-4'>
+                <div className='flex flex-col items-center mb-4' ref={aboutRef}>
                   <h2 className='text-xl md:text-2xl font-bold mb-2 flex items-center'>About me <Icon icon="icon-park-solid:avatar" className='w-6 h-6 ml-2' /></h2>
                 </div>
                 <p className='text-sm md:text-lg text-gray-900'>Hello everyone, I am an aspiring MERN stack developer with a passion for creating innovative solutions and continuously learning new technologies. I am eager to apply my skills and expand my knowledge in the field of web development.</p>
@@ -79,7 +85,7 @@ const MyPortfolio = () => {
           </div>
         </div>
 
-        <div className='flex flex-col shadow-2xl items-center mt-8'>
+        <div className='flex flex-col shadow-2xl items-center mt-8' ref={portfolioRef}>
           <div className='shadow-xl w-full flex flex-col rounded-lg mb-6 p-4 md:p-8 bg-gradient-to-r from-indigo-500 to-blue-400 items-center'>
             <p className='text-xl md:text-2xl font-bold text-center mt-6 flex items-center mb-4'>Portfolio <Icon icon="dashicons:portfolio" className='w-6 h-6 ml-2' /></p>
             <ViewPortfolio />
@@ -89,7 +95,7 @@ const MyPortfolio = () => {
         <div className='bg-gradient-to-r from-indigo-500 to-blue-200 p-5 rounded-3xl shadow-2xl mt-8 flex flex-col items-center'>
           <Card className='w-full md:w-3/4 p-4 md:p-8 bg-gradient-to-r from-blue-200 to-indigo-400'>
             <CardBody>
-              <div className='flex flex-col items-center mb-4'>
+              <div className='flex flex-col items-center mb-4' ref={contactRef}>
                 <h2 className='text-xl md:text-2xl font-bold mb-2 flex items-center'>Contact me <Icon icon="material-symbols-light:contact-mail-rounded" className='w-6 h-6 ml-2'/></h2>
               </div>
               <ContactForm />
